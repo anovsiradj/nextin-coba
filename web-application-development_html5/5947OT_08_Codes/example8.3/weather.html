@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather</title>
+    <link href="weather.css" rel="StyleSheet" />
+    <script src="lib/jquery-1.8.1.min.js"></script>
+    <script src="weatherWidget.js"></script>
+    <script src="weather.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header>Weather Widget Example </header>
+        <section id="main">
+            <div id="controls">
+                <div>
+                    Latitude: <input id="latitude" type="text"/><br/>
+                    Longitude: <input id="longitude" type="text"/>
+                </div>
+                <button id="getWeather">Check Weather</button>
+                <div class="error">
+                    Error: <span></span>
+                </div>
+            </div>
+            <div id="weather-widget">
+                <div class="loading">
+                    <p>Checking the weather...</p>
+                    <img src="images/loading.gif" alt="Loading..."/>
+                </div>
+                <div class="results">
+                    <header>
+                        <img src="" alt="Condition"/>Current weather for
+                        <div class="location"><span></span></div>
+                    </header>
+                    <section class="conditions">
+                        Conditions: <span data-field="weather"></span><br/>
+                        Temperature: <span data-field="temperature_string"></span><br/>
+                        Feels Like: <span data-field="feelslike_string"></span><br/>
+                        Humidity: <span data-field="relative_humidity"></span><br/>
+                        Wind: <span data-field="wind_string"></span><br/>
+                    </section>
+                    <footer class="credit">
+                        <a href="http://www.wunderground.com" title="Weather Underground">
+                            <img src="" alt="Weather Underground"/>
+                        </a>
+                    </footer>
+                </div>
+                <div class="error">
+                    Error: <span></span>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

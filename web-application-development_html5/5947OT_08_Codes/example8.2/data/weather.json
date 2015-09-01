@@ -1,0 +1,13 @@
+{
+    "location": {
+		"city":"Your City"
+    }
+	,"current_observation": {
+		"weather":"Clear",
+		"temperature_string":"38.3 F (3.5 C)",
+		"wind_string":"From the WSW at 1.0 MPH Gusting to 5.0 MPH",
+		"feelslike_string":"38 F (3 C)",
+        "relative_humidity":"71%",
+		"icon_url":"images/nt_clear.gif"
+	}
+}

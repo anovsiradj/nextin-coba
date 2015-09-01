@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mandelbrot</title>
+    <link href="mandelbrot.css" rel="StyleSheet" />
+    <script src="lib/jquery-1.8.1.min.js"></script>
+    <script src="mandelbrotGenerator.js"></script>
+    <script src="mandelbrot.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header>Mandelbrot </header>
+        <div id="main">
+            <canvas width="640" height="480">
+                Your browser doesn't support canvas.
+            </canvas>
+            <div>
+                <button class="draw" data-settings="[-2, -2, 2, 2]">Draw Full</button>
+                <button class="draw" data-settings="[-0.225, -0.816, -0.197, -0.788]">Preset 1</button>
+                <button class="draw" data-settings="[-1.18788, -0.304, -1.18728, -0.302]">Preset 2</button>
+            </div>
+        </div>
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>

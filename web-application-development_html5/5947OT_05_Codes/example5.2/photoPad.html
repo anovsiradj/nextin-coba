@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Photo Pad</title>
+    <link href="photoPad.css" rel="StyleSheet" type="text/css" />
+    <script src="lib/jquery-1.8.1.min.js" type="text/javascript"></script>
+    <script src="toolbar.js" type="text/javascript"></script>
+    <script src="imageEffects.js" type="text/javascript"></script>
+    <script src="photoPad.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="app">
+        <header>Photo Pad </header>
+        <div id="main">
+            <div id="toolbar">
+                <div class="dropdown-menu">
+                    <button data-action="menu">Load</button>
+                    <ul id="load-menu" data-option="filePicker" class="file-picker menu">
+                        <li data-value="file-picker">
+                            <input type="file" />
+                        </li>
+                    </ul>
+                </div>
+                <button data-action="save">Save</button>
+                <div class="dropdown-menu">
+                    <button data-action="menu">Effects</button>
+                    <ul data-option="applyEffect" class="menu">
+                        <li data-value="invert">Invert</li>
+                        <li data-value="toBlackAndWhite">B&amp;W</li>
+                        <li data-value="toSepia">Sepia</li>
+                        <li data-value="makeWaves">Waves</li>
+                        <li data-value="unfocus">Unfocus</li>
+                    </ul>
+                </div>
+                <button data-action="reset">Reset</button>
+            </div>
+            <canvas width="0" height="0">
+                Sorry, your browser doesn’t support canvas.
+            </canvas>
+        </div>
+        <footer>Click load to choose a file</footer>
+    </div>
+</body>
+</html>

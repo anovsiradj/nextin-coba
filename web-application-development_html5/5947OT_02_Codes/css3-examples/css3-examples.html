@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3</title>
+    <style type="text/css">
+        body
+        {
+            font: 1em Verdana, Geneva, sans-serif;
+        }
+        div
+        {
+            width: 15em;
+            height: 1em;
+            display: inline-block;
+            border: 2px solid SeaGreen;
+            background-color: #D5E8DD;
+            background-color: rgb(155, 187, 89);
+            text-align: center;
+            margin: 0.5em;
+            padding: 0.5em;
+        }
+
+        .colors
+        {
+            position: relative;
+            height: 17em;
+            width: 17em;
+        }
+        .colors>div
+        {
+            position: absolute;
+            display: inline-block;
+            border-radius: 50%;
+            border: none;
+            width: 10em;
+            height: 10em;
+        }
+        .rgba-r
+        {
+            top: 0;
+            left: 2.5em;
+            text-align: left;
+            background-color: rgb(128, 0, 0);
+            background-color: rgba(128, 0, 0, 0.5);
+        }
+        .rgba-g
+        {
+            top: 5em;
+            left: 5em;
+            background-color: rgba(0, 128, 0);
+            background-color: rgba(0, 128, 0, 0.5);
+        }
+        .rgba-b
+        {
+            top: 5em;
+            left: 0;
+            text-align: right;
+            background-color: rgba(0, 0, 128);
+            background-color: rgba(0, 0, 128, 0.5);
+        }
+        
+        .rounded-corners1
+        {
+            border-radius: 0.5em;
+        }
+        .rounded-corners2
+        {
+            border-radius: 3px 12px;
+        }
+        .rounded-corners3
+        {
+            border-radius: 1px 12px 6px;
+        }
+        .rounded-corners4
+        {
+            border-radius: 1px 4px 8px 12px;
+        }
+        .ellipse
+        {
+            border-radius: 50%;
+        }
+        .box-shadows1
+        {
+            box-shadow: 3px 3px;
+        }
+        .box-shadows2
+        {
+            box-shadow: -3px -3px;
+        }
+        .box-shadows3
+        {
+            box-shadow: 3px 3px 5px;
+        }
+        .box-shadows4
+        {
+            box-shadow: 3px 3px 5px 4px;
+        }
+        .box-shadows5
+        {
+            box-shadow: 3px 3px 5px 1px blue;
+        }
+        .box-shadows6
+        {
+            box-shadow: 0 0 5px 3px blue inset;
+        }
+        .box-shadows7
+        {
+            box-shadow: 0 0 5px 3px blue;
+        }
+        
+        .text-shadows1
+        {
+            text-shadow: 2px 2px 2px black;
+        }
+        .text-shadows2
+        {
+            color: white;
+            font-weight: bold;
+            text-shadow: 0 0 6px red;
+        }
+        
+        .gradients>div
+        {
+            width: 7em;
+            height: 5em;
+        }
+        .linear-gradients1
+        {
+            background: -webkit-linear-gradient(#FF0000, #0000FF);
+            background: -moz-linear-gradient(#FF0000, #0000FF);
+            background: -ms-linear-gradient(#FF0000, #0000FF);
+            background: linear-gradient(#FF0000, #0000FF);
+        }
+        .linear-gradients2
+        {
+            background: -webkit-linear-gradient(left, #FF0000, #0000FF);
+            background: -moz-linear-gradient(left, #FF0000, #0000FF);
+            background: -ms-linear-gradient(left, #FF0000, #0000FF);
+            background: linear-gradient(left, #FF0000, #0000FF);
+        }
+        .linear-gradients3
+        {
+            background: -webkit-linear-gradient(45deg, #FF0000, #0000FF, #00FF00);
+            background: -moz-linear-gradient(45deg, #FF0000, #0000FF, #00FF00);
+            background: -ms-linear-gradient(45deg, #FF0000, #0000FF, #00FF00);
+            background: linear-gradient(45deg, #FF0000, #0000FF, #00FF00);
+        }
+        .radial-gradients1
+        {
+            background: -webkit-radial-gradient(#FF0000, #0000FF);
+            background: -moz-radial-gradient(#FF0000, #0000FF);
+            background: -ms-radial-gradient(#FF0000, #0000FF);
+            background: radial-gradient(#FF0000, #0000FF);
+        }
+        .radial-gradients2
+        {
+            background: -webkit-radial-gradient(top, #FF0000, #0000FF);
+            background: -moz-radial-gradient(top, #FF0000, #0000FF);
+            background: -ms-radial-gradient(top, #FF0000, #0000FF);
+            background: radial-gradient(top, #FF0000, #0000FF);
+        }
+        .radial-gradients3
+        {
+            background: -webkit-radial-gradient(20px 20px, #FF0000, #0000FF, #00FF00);
+            background: -moz-radial-gradient(20px 20px, #FF0000, #0000FF, #00FF00);
+            background: -ms-radial-gradient(20px 20px, #FF0000, #0000FF, #00FF00);
+            background: radial-gradient(20px 20px, #FF0000, #0000FF, #00FF00);
+        }
+        
+        .transition
+        {
+            height: 8em;
+        }
+        .transitions1
+        {
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+        .transitions1:hover
+        {
+            width: 20em;
+            height: 6em;
+        }
+        .transitions2
+        {
+            -webkit-transition: all 1s linear;
+            -moz-transition: all 1s linear;
+            -o-transition: all  1s linear;
+            transition: all 1s linear;
+        }
+        .transitions2:hover
+        {
+            background-color: blue;
+        }
+
+        .transform
+        {
+            height: 12em;
+            padding-top: 1em;
+        }
+        .transform>div
+        {
+            width: 5em;
+            height: 5em;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all  1s ease;
+            transition: all 1s ease;
+        }
+        .transforms1:hover
+        {
+            -webkit-transform: translate(10px, 10px);
+            -moz-transform: translate(10px, 10px);
+            -o-transform: translate(10px, 10px);
+            -ms-transform: translate(10px, 10px);
+            transform: translate(10px, 10px);
+        }
+        .transforms2:hover
+        {
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        .transforms3:hover
+        {
+            -webkit-transform: scale(2, 0.5);
+            -moz-transform: scale(2, 0.5);
+            -o-transform: scale(2, 0.5);
+            -ms-transform: scale(2, 0.5);
+            transform: scale(2, 0.5);
+        }
+        .transforms4:hover
+        {
+            -webkit-transform: skew(45deg, 10deg);
+            -moz-transform: skew(45deg, 10deg);
+            -o-transform: skew(45deg, 10deg);
+            -ms-transform: skew(45deg, 10deg);
+            transform: skew(45deg, 10deg);
+        }
+        
+        .background>div
+        {
+            width: 160px;
+            height: 100px;
+            background: url(bg-middle.png);
+        }
+        .background>.backgrounds1
+        {
+            background-size: 100% 100%;
+        }
+        .background>.backgrounds2
+        {
+            background: url(bg-front.png), url(bg-middle.png), url(bg-back.png);
+            background-size: 100% 100%;
+        }
+        .background>.backgrounds3
+        {
+            background: url(bg-back.png) no-repeat;
+            background-size: 100% 100%;
+            padding: 1em;
+            background-origin: content-box;
+            border: 5px dashed black;
+        }
+        .background>.backgrounds4
+        {
+            background: url(bg-back.png) no-repeat;
+            background-size: 100% 100%;
+            padding: 1em;
+            background-origin: padding-box;
+            border: 5px dashed black;
+        }
+        .background>.backgrounds5
+        {
+            background: url(bg-back.png) no-repeat;
+            background-size: 100% 100%;
+            padding: 1em;
+            background-origin: border-box;
+            border: 5px dashed black;
+        }
+    </style>
+</head>
+<body>
+    <section class="colors">
+        <p>colors</p>
+        <div class="rgba-r"></div>
+        <div class="rgba-g"></div>
+        <div class="rgba-b"></div>
+    </section>
+
+    <section class="border-radius">
+        <p>border-radius</p>
+        <div>none</div>
+        <div class="rounded-corners1">4px</div>
+        <div class="rounded-corners2">3px 12px</div>
+        <div class="rounded-corners3">1px 12px 6px</div>
+        <div class="rounded-corners4">1px 4px 8px 12px</div>
+        <div class="ellipse">50%</div>
+    </section>
+
+    <section class="box-shadow">
+        <p>box-shadow</p>
+        <div class="box-shadows1">3px 3px</div>
+        <div class="box-shadows2">-3px -3px</div>
+        <div class="box-shadows3">3px 3px 5px</div>
+        <div class="box-shadows4">3px 3px 5px 4px</div>
+        <div class="box-shadows5">3px 3px 5px 1px blue</div>
+        <div class="box-shadows6">0 0 5px 3px blue inset</div>
+        <div class="box-shadows7">0 0 5px 3px blue</div>
+    </section>
+
+    <section class="text-shadow">
+        <p>text-shadow</p>
+        <div class="text-shadows1">2px 2px 2px black</div>
+        <div class="text-shadows2">0 0 6px red</div>
+    </section>
+
+    <section class="gradients">
+        <p>linear gradients</p>
+        <div class="linear-gradients1">default</div>
+        <div class="linear-gradients2">left</div>
+        <div class="linear-gradients3">45deg</div>
+
+        <p>radial gradients</p>
+        <div class="radial-gradients1">default</div>
+        <div class="radial-gradients2">top</div>
+        <div class="radial-gradients3">20px, 20px</div>
+    </section>
+
+    <section class="transition">
+        <p>transitions (on hover)</p>
+        <div class="transitions1">size</div>
+        <div class="transitions2">color</div>
+    </section>
+    
+    <section class="transform">
+        <p>transforms (on hover)</p>
+        <div class="transforms1">translate</div>
+        <div class="transforms2">rotate</div>
+        <div class="transforms3">scale</div>
+        <div class="transforms4">skew</div>
+    </section>
+
+    <section class="background">
+        <p>backgrounds</p>
+        <div>none</div>
+        <div class="backgrounds1">100% 100%</div>
+        <div class="backgrounds2">multiple</div>
+        <br/>
+        <div class="backgrounds3">context-box</div>
+        <div class="backgrounds4">padding-box</div>
+        <div class="backgrounds5">border-box</div>
+    </section>
+    
+</body>
+</html>

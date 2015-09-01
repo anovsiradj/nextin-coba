@@ -1,0 +1,58 @@
+﻿body
+{
+    font: 1em Verdana, Geneva, sans-serif;
+    color: WhiteSmoke;
+    padding: 0;
+    margin: 5px;
+    background-color: #003;
+}
+div
+{
+    padding: 0;
+    margin: 0;
+}
+button
+{
+    cursor: pointer;
+}
+.hidden
+{
+    display: none;
+}
+
+
+/****************************************************************************/
+/* App */
+/****************************************************************************/
+ #app
+{
+    position: relative;
+    margin: 4px;
+    background-color: #222;
+}
+
+#app header
+{
+    margin: 0;
+    padding: 0 0.5em;
+    font-size: 1.5em;
+    background-color: #006;
+}
+
+#app footer
+{
+    padding: 8px;
+}
+
+#main
+{
+    position: relative;
+    margin-bottom: 4px;
+    color: white;
+}
+
+canvas
+{
+    background-color: black;
+    margin: 1em;
+}
