@@ -22,7 +22,7 @@ function sqlu($arry) {
 	$kv2 = implode(",",$kv);
 	return $kv2;
 }
-
+/*
 $q = new mysqli("localhost","root","","sqlc");
 $post = array(
 	"d_name"=>"arashi",
@@ -32,4 +32,4 @@ $data = sqlu($post);
 if ($q->query("UPDATE dumm SET {$data} WHERE id='3'")) {
 	echo "<pre>berhasil";
 };
-
+*/
